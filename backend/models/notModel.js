@@ -1,6 +1,8 @@
 const mongoose = require("mongoose");
 
-const notSchema = new mongoose.Schema(
+const Sema = mongoose.Schema;
+
+const notSema = new Sema(
   {
     baslik: {
       type: String,
@@ -9,10 +11,14 @@ const notSchema = new mongoose.Schema(
     aciklama: {
       type: String,
     },
+    kullanici_id: {
+      type: String,
+      required: true,
+    },
   },
   {
     timestamps: true,
   }
 );
 
-module.exports = mongoose.model("Not", notSchema);
+module.exports = mongoose.model("Not", notSema);

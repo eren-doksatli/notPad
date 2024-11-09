@@ -1,12 +1,15 @@
 # notePad
 
-This is a basic full-stack note-taking app with the functionality to add new notes. The application is structured with a backend and a frontend, providing a seamless experience for creating and managing notes.
+This is a simple note-taking application where users can sign up, log in, and manage their notes. Once logged in, users can add, view, and delete notes. The application allows users to securely store their notes, making it a useful tool for personal note-taking.
 
-- Backend: The backend is built with Node.js and Express, providing RESTful APIs to handle note creation
+## Features
 
-- Frontend: The frontend is developed with React, allowing users to interact with the app and add new notes
-
-- Database: Mongoose is used for connecting and interacting with a MongoDB database, storing notes
+- User authentication (sign up & sign in)
+- Add new notes
+- View and delete notes
+- Secure user data with encrypted passwords
+- Protected API routes using JWT
+- Form validation to ensure proper input
 
 ## Tech Stack
 
@@ -15,5 +18,9 @@ This is a basic full-stack note-taking app with the functionality to add new not
 - Nodemon
 - Dotenv
 - Mongoose
+- Bcrypt
+- Cors
+- JsonWebToken
+- Validator
 
 ![](./frontend/assets/notePad.gif)

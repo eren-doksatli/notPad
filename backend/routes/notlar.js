@@ -7,20 +7,20 @@ const {
   notGuncelle,
 } = require("../controllers/notController");
 
+const authKontrol = require("../middleware/authKontrol");
+
 const router = express.Router();
+
+router.use(authKontrol);
 
 router.get("/", notlarGetir);
 
-//List
 router.get("/:id", notGetir);
 
-//Add
 router.post("/", notOlustur);
 
-//Delete
 router.delete("/:id", notSil);
 
-//Update
 router.patch("/:id", notGuncelle);
 
 module.exports = router;
